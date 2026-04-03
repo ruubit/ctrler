@@ -1,0 +1,111 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(146, 177, 196);
+}
+
+#app {
+    overflow: hidden;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h1 {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    color: rgb(220, 220, 220);
+    text-shadow: rgb(0, 0, 0) 2px 2px 3px;
+}
+
+#logo {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#light {
+    border-radius: 35%;
+    background: linear-gradient(rgb(227, 227, 227), rgb(208, 166, 68), rgb(218, 218, 218));
+    width: 25px;
+    height: 25px;
+    margin-bottom: -25px;
+}
+
+#remote {
+    background: linear-gradient(to right, rgb(74, 74, 74), rgb(88, 88, 88) 10%, rgb(99, 99, 99) 50%, rgb(88, 88, 88) 90%, rgb(74, 74, 74));
+    border-radius: 20px;
+    width: 80vw;
+    height: 85dvh;
+    max-width: 300px;
+    max-height: 600px;
+    outline: 2px double black;
+}
+
+#button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    width: fit-content;
+}
+
+.cell {
+    display: flex;
+    flex: 0 0 50%;
+    height: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    appearance: none;
+    width: 85%;
+    border-radius: 12px;
+    font-size: 28px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    border: 0px;
+    box-shadow: 1px 1px 1px 1px rgb(59, 59, 59);
+}
+
+button .icon {
+    vertical-align: middle;
+    margin-right: 0.3em;
+}
+
+#rewind .icon,
+#forward .icon {
+    font-size: 0.8em;
+}
+
+#play .icon,
+#pause .icon {
+    font-size: 1em;
+}
+
+button#rewind {
+    background: linear-gradient(rgb(23, 151, 242), rgb(17, 93, 160));
+}
+
+button#forward {
+    background: linear-gradient(rgb(252, 174, 6), rgb(221, 163, 6));
+}
+
+button#play {
+    background: linear-gradient(rgb(53, 182, 24), rgb(35, 114, 18));
+}
+
+button#pause {
+    background: linear-gradient(rgb(199, 27, 27), rgb(113, 17, 17));
+}
+
+button:hover {
+    filter: brightness(120%);
+}

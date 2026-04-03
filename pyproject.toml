@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctrler"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.128.6",
+    "pyautogui>=0.9.54",
+    "qrcode[pil]>=8.2",
+]
+
+[project.scripts]
+ctrler = "ctrler.cli:main"
+
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+    "pytest>=9.0.2",
+]
+
+[tool.setuptools.packages.find]
+include = ["ctrler", "ctrler.*"]
+
+
+[tool.setuptools.package-data]
+ctrler = ["frontend/*"]
