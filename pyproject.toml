@@ -7,7 +7,7 @@ name = "ctrler"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
-    "fastapi[standard]>=0.128.6",
+    "fastapi[standard]>=0.160.0",
     "pyautogui>=0.9.54",
     "qrcode[pil]>=8.2",
 ]
